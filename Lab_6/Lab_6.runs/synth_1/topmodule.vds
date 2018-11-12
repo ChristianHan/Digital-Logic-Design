@@ -1,0 +1,582 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed May  2 12:53:48 2018
+# Process ID: 8872
+# Current directory: C:/Users/chris/Documents/Lab_6/Lab_6.runs/synth_1
+# Command line: vivado.exe -log topmodule.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source topmodule.tcl
+# Log file: C:/Users/chris/Documents/Lab_6/Lab_6.runs/synth_1/topmodule.vds
+# Journal file: C:/Users/chris/Documents/Lab_6/Lab_6.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source topmodule.tcl -notrace
+Command: synth_design -top topmodule -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4556 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 333.773 ; gain = 101.031
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'topmodule' [C:/Users/chris/Documents/Lab_6/Lab_6.srcs/sources_1/new/topmodule.v:4]
+INFO: [Synth 8-226] default block is never used [C:/Users/chris/Documents/Lab_6/Lab_6.srcs/sources_1/new/topmodule.v:39]
+INFO: [Synth 8-638] synthesizing module 'hexto7seg' [C:/Users/chris/Documents/Lab_6/Lab_6.srcs/sources_1/new/sseg.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/chris/Documents/Lab_6/Lab_6.srcs/sources_1/new/sseg.v:9]
+INFO: [Synth 8-256] done synthesizing module 'hexto7seg' (1#1) [C:/Users/chris/Documents/Lab_6/Lab_6.srcs/sources_1/new/sseg.v:3]
+INFO: [Synth 8-638] synthesizing module 'stopwatch' [C:/Users/chris/Documents/Lab_6/Lab_6.srcs/sources_1/new/stopwatch.v:27]
+INFO: [Synth 8-226] default block is never used [C:/Users/chris/Documents/Lab_6/Lab_6.srcs/sources_1/new/stopwatch.v:48]
+INFO: [Synth 8-256] done synthesizing module 'stopwatch' (2#1) [C:/Users/chris/Documents/Lab_6/Lab_6.srcs/sources_1/new/stopwatch.v:27]
+INFO: [Synth 8-638] synthesizing module 'my_stopwatch' [C:/Users/chris/Documents/Lab_6/Lab_6.srcs/sources_1/new/my_stopwatch.v:27]
+INFO: [Synth 8-226] default block is never used [C:/Users/chris/Documents/Lab_6/Lab_6.srcs/sources_1/new/my_stopwatch.v:53]
+WARNING: [Synth 8-5788] Register d2_reg in module my_stopwatch is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/chris/Documents/Lab_6/Lab_6.srcs/sources_1/new/my_stopwatch.v:132]
+WARNING: [Synth 8-5788] Register d3_reg in module my_stopwatch is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/chris/Documents/Lab_6/Lab_6.srcs/sources_1/new/my_stopwatch.v:136]
+INFO: [Synth 8-256] done synthesizing module 'my_stopwatch' (3#1) [C:/Users/chris/Documents/Lab_6/Lab_6.srcs/sources_1/new/my_stopwatch.v:27]
+INFO: [Synth 8-638] synthesizing module 'timer' [C:/Users/chris/Documents/Lab_6/Lab_6.srcs/sources_1/new/timer.v:27]
+INFO: [Synth 8-226] default block is never used [C:/Users/chris/Documents/Lab_6/Lab_6.srcs/sources_1/new/timer.v:48]
+INFO: [Synth 8-256] done synthesizing module 'timer' (4#1) [C:/Users/chris/Documents/Lab_6/Lab_6.srcs/sources_1/new/timer.v:27]
+WARNING: [Synth 8-689] width (16) of port connection 'sw' does not match port width (8) of module 'timer' [C:/Users/chris/Documents/Lab_6/Lab_6.srcs/sources_1/new/topmodule.v:227]
+INFO: [Synth 8-638] synthesizing module 'my_timer' [C:/Users/chris/Documents/Lab_6/Lab_6.srcs/sources_1/new/my_timer.v:27]
+INFO: [Synth 8-226] default block is never used [C:/Users/chris/Documents/Lab_6/Lab_6.srcs/sources_1/new/my_timer.v:48]
+WARNING: [Synth 8-5788] Register d2_reg in module my_timer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/chris/Documents/Lab_6/Lab_6.srcs/sources_1/new/my_timer.v:130]
+WARNING: [Synth 8-5788] Register d3_reg in module my_timer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/chris/Documents/Lab_6/Lab_6.srcs/sources_1/new/my_timer.v:134]
+INFO: [Synth 8-256] done synthesizing module 'my_timer' (5#1) [C:/Users/chris/Documents/Lab_6/Lab_6.srcs/sources_1/new/my_timer.v:27]
+WARNING: [Synth 8-689] width (16) of port connection 'sw' does not match port width (8) of module 'my_timer' [C:/Users/chris/Documents/Lab_6/Lab_6.srcs/sources_1/new/topmodule.v:237]
+INFO: [Synth 8-256] done synthesizing module 'topmodule' (6#1) [C:/Users/chris/Documents/Lab_6/Lab_6.srcs/sources_1/new/topmodule.v:4]
+WARNING: [Synth 8-3331] design timer has unconnected port sw[7]
+WARNING: [Synth 8-3331] design timer has unconnected port sw[6]
+WARNING: [Synth 8-3331] design timer has unconnected port sw[5]
+WARNING: [Synth 8-3331] design timer has unconnected port sw[4]
+WARNING: [Synth 8-3331] design timer has unconnected port sw[3]
+WARNING: [Synth 8-3331] design timer has unconnected port sw[2]
+WARNING: [Synth 8-3331] design timer has unconnected port sw[1]
+WARNING: [Synth 8-3331] design timer has unconnected port sw[0]
+WARNING: [Synth 8-3331] design my_stopwatch has unconnected port sw[15]
+WARNING: [Synth 8-3331] design my_stopwatch has unconnected port sw[14]
+WARNING: [Synth 8-3331] design my_stopwatch has unconnected port sw[13]
+WARNING: [Synth 8-3331] design my_stopwatch has unconnected port sw[12]
+WARNING: [Synth 8-3331] design my_stopwatch has unconnected port sw[11]
+WARNING: [Synth 8-3331] design my_stopwatch has unconnected port sw[10]
+WARNING: [Synth 8-3331] design my_stopwatch has unconnected port sw[9]
+WARNING: [Synth 8-3331] design my_stopwatch has unconnected port sw[8]
+WARNING: [Synth 8-3331] design stopwatch has unconnected port sw[15]
+WARNING: [Synth 8-3331] design stopwatch has unconnected port sw[14]
+WARNING: [Synth 8-3331] design stopwatch has unconnected port sw[13]
+WARNING: [Synth 8-3331] design stopwatch has unconnected port sw[12]
+WARNING: [Synth 8-3331] design stopwatch has unconnected port sw[11]
+WARNING: [Synth 8-3331] design stopwatch has unconnected port sw[10]
+WARNING: [Synth 8-3331] design stopwatch has unconnected port sw[9]
+WARNING: [Synth 8-3331] design stopwatch has unconnected port sw[8]
+WARNING: [Synth 8-3331] design stopwatch has unconnected port sw[7]
+WARNING: [Synth 8-3331] design stopwatch has unconnected port sw[6]
+WARNING: [Synth 8-3331] design stopwatch has unconnected port sw[5]
+WARNING: [Synth 8-3331] design stopwatch has unconnected port sw[4]
+WARNING: [Synth 8-3331] design stopwatch has unconnected port sw[3]
+WARNING: [Synth 8-3331] design stopwatch has unconnected port sw[2]
+WARNING: [Synth 8-3331] design stopwatch has unconnected port sw[1]
+WARNING: [Synth 8-3331] design stopwatch has unconnected port sw[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 386.402 ; gain = 153.660
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 386.402 ; gain = 153.660
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/chris/Documents/Lab_6/Lab_6.srcs/constrs_1/Basys3_Master_Stopwatch.xdc]
+Finished Parsing XDC File [C:/Users/chris/Documents/Lab_6/Lab_6.srcs/constrs_1/Basys3_Master_Stopwatch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/chris/Documents/Lab_6/Lab_6.srcs/constrs_1/Basys3_Master_Stopwatch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/topmodule_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/topmodule_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 723.750 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 723.750 ; gain = 491.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 723.750 ; gain = 491.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 723.750 ; gain = 491.008
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "max" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "flag" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "d1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "d2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "d3" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element d3_reg was removed.  [C:/Users/chris/Documents/Lab_6/Lab_6.srcs/sources_1/new/stopwatch.v:129]
+WARNING: [Synth 8-6014] Unused sequential element COUNT2_reg was removed.  [C:/Users/chris/Documents/Lab_6/Lab_6.srcs/sources_1/new/stopwatch.v:179]
+INFO: [Synth 8-5546] ROM "max" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "flag" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "d1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "d2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "d3" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element COUNT2_reg was removed.  [C:/Users/chris/Documents/Lab_6/Lab_6.srcs/sources_1/new/my_stopwatch.v:185]
+INFO: [Synth 8-5546] ROM "max" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "flag" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "d1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "d2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "d3" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element d3_reg was removed.  [C:/Users/chris/Documents/Lab_6/Lab_6.srcs/sources_1/new/timer.v:134]
+WARNING: [Synth 8-6014] Unused sequential element COUNT2_reg was removed.  [C:/Users/chris/Documents/Lab_6/Lab_6.srcs/sources_1/new/timer.v:185]
+INFO: [Synth 8-5546] ROM "max" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "flag" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "d1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "d2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "d3" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element COUNT2_reg was removed.  [C:/Users/chris/Documents/Lab_6/Lab_6.srcs/sources_1/new/my_timer.v:186]
+INFO: [Synth 8-5546] ROM "max" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "flag" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "d1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "d2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "d3" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element d3_reg was removed.  [C:/Users/chris/Documents/Lab_6/Lab_6.srcs/sources_1/new/topmodule.v:119]
+WARNING: [Synth 8-6014] Unused sequential element COUNT2_reg was removed.  [C:/Users/chris/Documents/Lab_6/Lab_6.srcs/sources_1/new/topmodule.v:169]
+WARNING: [Synth 8-327] inferring latch for variable 'r_reg' [C:/Users/chris/Documents/Lab_6/Lab_6.srcs/sources_1/new/sseg.v:10]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 723.750 ; gain = 491.008
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 5     
+	   2 Input      4 Bit       Adders := 20    
++---Registers : 
+	               20 Bit    Registers := 5     
+	                4 Bit    Registers := 20    
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 5     
+	   4 Input      7 Bit        Muxes := 5     
+	   4 Input      4 Bit        Muxes := 5     
+	   2 Input      4 Bit        Muxes := 47    
+	   7 Input      2 Bit        Muxes := 4     
+	   8 Input      2 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 20    
+	   4 Input      1 Bit        Muxes := 10    
+	   2 Input      1 Bit        Muxes := 68    
+	   5 Input      1 Bit        Muxes := 4     
+	   7 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module topmodule 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 4     
++---Registers : 
+	               20 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+	   4 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 7     
+	   8 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 16    
+	   7 Input      1 Bit        Muxes := 1     
+Module hexto7seg 
+Detailed RTL Component Info : 
++---Muxes : 
+	  11 Input      1 Bit        Muxes := 1     
+Module stopwatch 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 4     
++---Registers : 
+	               20 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+	   4 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 7     
+	   7 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 13    
+	   5 Input      1 Bit        Muxes := 1     
+Module my_stopwatch 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 4     
++---Registers : 
+	               20 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+	   4 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 13    
+	   7 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 13    
+	   5 Input      1 Bit        Muxes := 1     
+Module timer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 4     
++---Registers : 
+	               20 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+	   4 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 7     
+	   7 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 13    
+	   5 Input      1 Bit        Muxes := 1     
+Module my_timer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 4     
++---Registers : 
+	               20 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+	   4 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 13    
+	   7 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 13    
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "a1/max" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "a2/max" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "a3/max" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "a4/max" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "max" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element a1/COUNT2_reg was removed.  [C:/Users/chris/Documents/Lab_6/Lab_6.srcs/sources_1/new/stopwatch.v:179]
+WARNING: [Synth 8-6014] Unused sequential element a1/d3_reg was removed.  [C:/Users/chris/Documents/Lab_6/Lab_6.srcs/sources_1/new/stopwatch.v:129]
+WARNING: [Synth 8-6014] Unused sequential element a2/COUNT2_reg was removed.  [C:/Users/chris/Documents/Lab_6/Lab_6.srcs/sources_1/new/my_stopwatch.v:185]
+WARNING: [Synth 8-6014] Unused sequential element a3/COUNT2_reg was removed.  [C:/Users/chris/Documents/Lab_6/Lab_6.srcs/sources_1/new/timer.v:185]
+WARNING: [Synth 8-6014] Unused sequential element a3/d3_reg was removed.  [C:/Users/chris/Documents/Lab_6/Lab_6.srcs/sources_1/new/timer.v:134]
+WARNING: [Synth 8-6014] Unused sequential element a4/COUNT2_reg was removed.  [C:/Users/chris/Documents/Lab_6/Lab_6.srcs/sources_1/new/my_timer.v:186]
+WARNING: [Synth 8-6014] Unused sequential element COUNT2_reg was removed.  [C:/Users/chris/Documents/Lab_6/Lab_6.srcs/sources_1/new/topmodule.v:169]
+WARNING: [Synth 8-6014] Unused sequential element d3_reg was removed.  [C:/Users/chris/Documents/Lab_6/Lab_6.srcs/sources_1/new/topmodule.v:119]
+WARNING: [Synth 8-6014] Unused sequential element a2/COUNT2_reg was removed.  [C:/Users/chris/Documents/Lab_6/Lab_6.srcs/sources_1/new/my_stopwatch.v:185]
+WARNING: [Synth 8-6014] Unused sequential element a3/COUNT2_reg was removed.  [C:/Users/chris/Documents/Lab_6/Lab_6.srcs/sources_1/new/timer.v:185]
+WARNING: [Synth 8-6014] Unused sequential element a4/COUNT2_reg was removed.  [C:/Users/chris/Documents/Lab_6/Lab_6.srcs/sources_1/new/my_timer.v:186]
+WARNING: [Synth 8-6014] Unused sequential element COUNT2_reg was removed.  [C:/Users/chris/Documents/Lab_6/Lab_6.srcs/sources_1/new/topmodule.v:169]
+WARNING: [Synth 8-3331] design topmodule has unconnected port sw[13]
+WARNING: [Synth 8-3331] design topmodule has unconnected port sw[12]
+WARNING: [Synth 8-3331] design topmodule has unconnected port sw[11]
+WARNING: [Synth 8-3331] design topmodule has unconnected port sw[10]
+WARNING: [Synth 8-3331] design topmodule has unconnected port sw[9]
+WARNING: [Synth 8-3331] design topmodule has unconnected port sw[8]
+WARNING: [Synth 8-3332] Sequential element (c0/r_reg[6]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (c0/r_reg[5]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (c0/r_reg[4]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (c0/r_reg[3]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (c0/r_reg[2]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (c0/r_reg[1]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (c0/r_reg[0]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (c1/r_reg[6]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (c1/r_reg[5]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (c1/r_reg[4]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (c1/r_reg[3]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (c1/r_reg[2]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (c1/r_reg[1]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (c1/r_reg[0]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (c2/r_reg[6]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (c2/r_reg[5]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (c2/r_reg[4]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (c2/r_reg[3]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (c2/r_reg[2]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (c2/r_reg[1]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (c2/r_reg[0]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (c3/r_reg[6]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (c3/r_reg[5]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (c3/r_reg[4]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (c3/r_reg[3]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (c3/r_reg[2]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (c3/r_reg[1]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (c3/r_reg[0]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (d0_reg[3]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (d0_reg[2]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (d0_reg[1]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (d0_reg[0]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (d1_reg[3]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (d1_reg[2]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (d1_reg[1]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (d1_reg[0]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (d2_reg[3]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (d2_reg[2]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (d2_reg[1]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (d2_reg[0]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (COUNT_reg[19]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (COUNT_reg[18]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (COUNT_reg[17]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (COUNT_reg[16]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (COUNT_reg[15]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (COUNT_reg[14]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (COUNT_reg[13]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (COUNT_reg[12]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (COUNT_reg[11]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (COUNT_reg[10]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (COUNT_reg[9]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (COUNT_reg[8]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (COUNT_reg[7]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (COUNT_reg[6]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (COUNT_reg[5]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (COUNT_reg[4]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (COUNT_reg[3]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (COUNT_reg[2]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (COUNT_reg[1]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (COUNT_reg[0]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (flag_reg) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (d3_reg[3]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (d3_reg[2]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (d3_reg[1]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (d3_reg[0]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (state_reg[1]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (state_reg[0]) is unused and will be removed from module topmodule.
+INFO: [Synth 8-3886] merging instance 'a3/state_reg[0]' (FDC) to 'a4/state_reg[0]'
+INFO: [Synth 8-3886] merging instance 'a4/state_reg[0]' (FDC) to 'a2/state_reg[0]'
+INFO: [Synth 8-3886] merging instance 'a2/state_reg[0]' (FDC) to 'a1/state_reg[0]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 723.750 ; gain = 491.008
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 723.750 ; gain = 491.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 771.293 ; gain = 538.551
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 771.293 ; gain = 538.551
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 771.293 ; gain = 538.551
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 771.293 ; gain = 538.551
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 771.293 ; gain = 538.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 771.293 ; gain = 538.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 771.293 ; gain = 538.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 771.293 ; gain = 538.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    25|
+|3     |LUT1   |     2|
+|4     |LUT2   |   108|
+|5     |LUT3   |    42|
+|6     |LUT4   |   120|
+|7     |LUT5   |    69|
+|8     |LUT6   |   104|
+|9     |FDCE   |   165|
+|10    |FDPE   |    24|
+|11    |LD     |   112|
+|12    |LDC    |    16|
+|13    |IBUF   |    13|
+|14    |OBUF   |    12|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------------+------+
+|      |Instance |Module       |Cells |
++------+---------+-------------+------+
+|1     |top      |             |   813|
+|2     |  a1     |stopwatch    |   194|
+|3     |    c0   |hexto7seg_11 |    15|
+|4     |    c1   |hexto7seg_12 |    15|
+|5     |    c2   |hexto7seg_13 |    22|
+|6     |    c3   |hexto7seg_14 |    15|
+|7     |  a2     |my_stopwatch |   213|
+|8     |    c0   |hexto7seg_7  |    15|
+|9     |    c1   |hexto7seg_8  |    15|
+|10    |    c2   |hexto7seg_9  |    25|
+|11    |    c3   |hexto7seg_10 |    19|
+|12    |  a3     |timer        |   163|
+|13    |    c0   |hexto7seg_3  |    15|
+|14    |    c1   |hexto7seg_4  |    15|
+|15    |    c2   |hexto7seg_5  |    22|
+|16    |    c3   |hexto7seg_6  |    15|
+|17    |  a4     |my_timer     |   217|
+|18    |    c0   |hexto7seg    |    15|
+|19    |    c1   |hexto7seg_0  |    15|
+|20    |    c2   |hexto7seg_1  |    33|
+|21    |    c3   |hexto7seg_2  |    20|
++------+---------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 771.293 ; gain = 538.551
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 94 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:37 . Memory (MB): peak = 771.293 ; gain = 201.203
+Synthesis Optimization Complete : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 771.293 ; gain = 538.551
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 166 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 128 instances were transformed.
+  LD => LDCE: 112 instances
+  LDC => LDCE: 16 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+63 Infos, 132 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 771.293 ; gain = 544.953
+INFO: [Common 17-1381] The checkpoint 'C:/Users/chris/Documents/Lab_6/Lab_6.runs/synth_1/topmodule.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file topmodule_utilization_synth.rpt -pb topmodule_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 771.293 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed May  2 12:54:42 2018...

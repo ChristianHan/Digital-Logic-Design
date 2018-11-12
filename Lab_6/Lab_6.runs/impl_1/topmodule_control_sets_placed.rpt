@@ -1,0 +1,121 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Wed May  2 12:55:23 2018
+| Host         : DESKTOP-BDLHSME running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file topmodule_control_sets_placed.rpt
+| Design       : topmodule
+| Device       : xc7a35t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    58 |
+| Unused register locations in slices containing registers |   235 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             112 |           33 |
+| No           | No                    | Yes                    |              57 |           34 |
+| No           | Yes                   | No                     |              16 |           10 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |             132 |           39 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------+---------------------+------------------+------------------+----------------+
+|         Clock Signal        |    Enable Signal    | Set/Reset Signal | Slice Load Count | Bel Load Count |
++-----------------------------+---------------------+------------------+------------------+----------------+
+|  clk_IBUF_BUFG              |                     | a2/d2_reg[1]_C_0 |                1 |              2 |
+|  clk_IBUF_BUFG              |                     | a2/d3_reg[2]_C_0 |                1 |              2 |
+|  clk_IBUF_BUFG              |                     | a2/d2_reg[0]_C_0 |                1 |              2 |
+|  clk_IBUF_BUFG              |                     | a2/d2_reg[1]_P_0 |                2 |              2 |
+|  clk_IBUF_BUFG              |                     | a2/d3_reg[1]_C_0 |                1 |              2 |
+|  clk_IBUF_BUFG              |                     | a2/d2_reg[2]_C_0 |                2 |              2 |
+|  clk_IBUF_BUFG              |                     | a2/d2_reg[3]_C_0 |                1 |              2 |
+|  clk_IBUF_BUFG              |                     | a4/d2_reg[2]_P_0 |                2 |              2 |
+|  clk_IBUF_BUFG              |                     | a2/d3_reg[0]_C_0 |                2 |              2 |
+|  clk_IBUF_BUFG              |                     | a2/d3_reg[1]_P_0 |                1 |              2 |
+|  clk_IBUF_BUFG              |                     | a2/d3_reg[3]_C_0 |                2 |              2 |
+|  clk_IBUF_BUFG              |                     | a4/d2_reg[3]_P_0 |                2 |              2 |
+|  clk_IBUF_BUFG              |                     | a4/d3_reg[3]_P_0 |                2 |              2 |
+|  clk_IBUF_BUFG              |                     | a4/d3_reg[2]_P_0 |                1 |              2 |
+|  a4/d2_reg[2]_P_0           |                     | a2/d2_reg[2]_C_0 |                1 |              2 |
+|  clk_IBUF_BUFG              |                     | a4/d3_reg[0]_P_0 |                2 |              2 |
+|  clk_IBUF_BUFG              |                     | a4/d2_reg[0]_P_0 |                1 |              2 |
+|  a4/d3_reg[0]_P_0           |                     | a2/d3_reg[0]_C_0 |                1 |              2 |
+|  a4/d2_reg[0]_P_0           |                     | a2/d2_reg[0]_C_0 |                2 |              2 |
+|  a2/d2_reg[1]_P_0           |                     | a2/d2_reg[1]_C_0 |                1 |              2 |
+|  a2/d3_reg[1]_P_0           |                     | a2/d3_reg[1]_C_0 |                1 |              2 |
+|  a4/d2_reg[3]_P_0           |                     | a2/d2_reg[3]_C_0 |                1 |              2 |
+|  a4/d3_reg[3]_P_0           |                     | a2/d3_reg[3]_C_0 |                1 |              2 |
+|  a4/d3_reg[2]_P_0           |                     | a2/d3_reg[2]_C_0 |                2 |              2 |
+|  clk_IBUF_BUFG              | a3/d0[3]_i_1__1_n_0 | reset_IBUF       |                1 |              4 |
+|  clk_IBUF_BUFG              | a3/d3[3]_i_1__0_n_0 | reset_IBUF       |                1 |              4 |
+|  clk_IBUF_BUFG              | a1/d1[3]_i_1_n_0    | reset_IBUF       |                1 |              4 |
+|  clk_IBUF_BUFG              | a1/d2[3]_i_1_n_0    | reset_IBUF       |                1 |              4 |
+|  clk_IBUF_BUFG              | a1/d3[3]_i_1_n_0    | reset_IBUF       |                1 |              4 |
+|  clk_IBUF_BUFG              | a2/d1[3]_i_1__0_n_0 | reset_IBUF       |                1 |              4 |
+|  clk_IBUF_BUFG              | a3/d2[3]_i_1__0_n_0 | reset_IBUF       |                1 |              4 |
+|  clk_IBUF_BUFG              | a4/d1[3]_i_1__2_n_0 | reset_IBUF       |                1 |              4 |
+|  clk_IBUF_BUFG              | a4/d0[3]_i_1__2_n_0 | reset_IBUF       |                1 |              4 |
+|  clk_IBUF_BUFG              | a4/state_reg[1]_0   | reset_IBUF       |                3 |              4 |
+|  clk_IBUF_BUFG              | a3/d1[3]_i_1__1_n_0 | reset_IBUF       |                2 |              4 |
+|  clk_IBUF_BUFG              | a1/d0[3]_i_1_n_0    | reset_IBUF       |                1 |              4 |
+|  clk_IBUF_BUFG              | a2/d0[3]_i_1__0_n_0 | reset_IBUF       |                1 |              4 |
+|  a4/c3/r_reg[6]_i_2__10_n_0 |                     |                  |                2 |              7 |
+|  a2/c1/r_reg[6]_i_2__7_n_0  |                     |                  |                2 |              7 |
+|  a2/c2/r_reg[6]_i_2_n_0     |                     |                  |                2 |              7 |
+|  a2/c0/r_reg[6]_i_2__6_n_0  |                     |                  |                2 |              7 |
+|  a4/c1/r_reg[6]_i_2__14_n_0 |                     |                  |                2 |              7 |
+|  a4/c0/r_reg[6]_i_2__13_n_0 |                     |                  |                2 |              7 |
+|  a4/c2/r_reg[6]_i_2__1_n_0  |                     |                  |                2 |              7 |
+|  a1/c0/r_reg[6]_i_2__2_n_0  |                     |                  |                2 |              7 |
+|  a1/c1/r_reg[6]_i_2__3_n_0  |                     |                  |                2 |              7 |
+|  a1/c2/r_reg[6]_i_2__5_n_0  |                     |                  |                2 |              7 |
+|  a1/c3/r_reg[6]_i_2__4_n_0  |                     |                  |                2 |              7 |
+|  a3/c0/r_reg[6]_i_2__11_n_0 |                     |                  |                2 |              7 |
+|  a3/c1/r_reg[6]_i_2__12_n_0 |                     |                  |                3 |              7 |
+|  a3/c2/r_reg[6]_i_2__9_n_0  |                     |                  |                2 |              7 |
+|  a3/c3/r_reg[6]_i_2__8_n_0  |                     |                  |                2 |              7 |
+|  a2/c3/r_reg[6]_i_2__0_n_0  |                     |                  |                2 |              7 |
+|  clk_IBUF_BUFG              | a1/COUNT            | reset_IBUF       |                5 |             20 |
+|  clk_IBUF_BUFG              | a4/COUNT            | reset_IBUF       |                5 |             20 |
+|  clk_IBUF_BUFG              | a3/COUNT            | reset_IBUF       |                7 |             20 |
+|  clk_IBUF_BUFG              | a2/COUNT            | reset_IBUF       |                6 |             20 |
+|  clk_IBUF_BUFG              |                     | reset_IBUF       |               10 |             25 |
++-----------------------------+---------------------+------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 2      |                    24 |
+| 4      |                    13 |
+| 7      |                    16 |
+| 16+    |                     5 |
++--------+-----------------------+
+
+

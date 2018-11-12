@@ -1,0 +1,12 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+C:/Users/chris/Documents/Lab_6/Lab_6.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+C:/Users/chris/Documents/Lab_6/Lab_6.srcs/sim_1/new/tb_stopwatch.v,1524849305,verilog,,,,tb_topmodule,,,,,,,,
+C:/Users/chris/Documents/Lab_6/Lab_6.srcs/sources_1/new/my_stopwatch.v,1524762969,verilog,,C:/Users/chris/Documents/Lab_6/Lab_6.srcs/sources_1/new/my_timer.v,,my_stopwatch,,,,,,,,
+C:/Users/chris/Documents/Lab_6/Lab_6.srcs/sources_1/new/my_timer.v,1524843090,verilog,,C:/Users/chris/Documents/Lab_6/Lab_6.srcs/sources_1/new/sseg.v,,my_timer,,,,,,,,
+C:/Users/chris/Documents/Lab_6/Lab_6.srcs/sources_1/new/sseg.v,1524714630,verilog,,C:/Users/chris/Documents/Lab_6/Lab_6.srcs/sources_1/new/stopwatch.v,,hexto7seg,,,,,,,,
+C:/Users/chris/Documents/Lab_6/Lab_6.srcs/sources_1/new/stopwatch.v,1524847337,verilog,,C:/Users/chris/Documents/Lab_6/Lab_6.srcs/sources_1/new/timer.v,,stopwatch,,,,,,,,
+C:/Users/chris/Documents/Lab_6/Lab_6.srcs/sources_1/new/timer.v,1524761493,verilog,,C:/Users/chris/Documents/Lab_6/Lab_6.srcs/sources_1/new/topmodule.v,,timer,,,,,,,,
+C:/Users/chris/Documents/Lab_6/Lab_6.srcs/sources_1/new/topmodule.v,1524847362,verilog,,C:/Users/chris/Documents/Lab_6/Lab_6.srcs/sim_1/new/tb_stopwatch.v,,topmodule,,,,,,,,
